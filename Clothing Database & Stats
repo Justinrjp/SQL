@@ -1,0 +1,24 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, product TEXT, price INTEGER, description TEXT, size TEXT);
+INSERT into store VALUES (1, "crewneck shirt", 20, "blue", "large");
+INSERT into store VALUES (2, "sweatpants", 25, "brown", "medium");
+INSERT into store VALUES (3, "sweatpants", 25, "brown", "large");
+INSERT into store VALUES (4, "sweatpants", 25, "brown", "small");
+INSERT into store VALUES (5, "crewneck shirt", 20, "blue", "medium");
+INSERT into store VALUES (6, "crewneck shirt", 20, "blue", "small");
+INSERT into store VALUES (7, "shorts", 15, "gray", "large");
+INSERT into store VALUES (8, "shorts", 15, "gray", "medium");
+INSERT into store VALUES (9, "shorts", 15, "gray", "small");
+INSERT into store VALUES (10, "sweater", 50, "black", "large");
+INSERT into store VALUES (11, "sweater", 50, "black", "medium");
+INSERT into store VALUES (12, "sweater", 50, "black", "small");
+INSERT into store VALUES (13, "hoodie", 60, "red", "large");
+INSERT into store VALUES (14, "hoodie", 60, "red", "medium");
+INSERT into store VALUES (15, "hoodie", 60, "red", "small");
+
+--Show what sizes there are for each product
+SELECT * FROM store
+ORDER BY size;
+
+--Show what colors are available in each type of clothing
+SELECT * FROM store
+ORDER BY description;
